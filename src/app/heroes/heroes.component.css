@@ -53,3 +53,11 @@
   margin-right: .8em;
   border-radius: 4px 0 0 4px;
 }
+
+button.delete {
+  position: relative;
+  left: 194px;
+  top: -32px;
+  background-color: gray !important;
+  color: white;
+}
