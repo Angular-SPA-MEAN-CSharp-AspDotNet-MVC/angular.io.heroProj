@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AgGridModule } from 'ag-grid-angular';
+import { BrowserModule } from '@angular/platform-browser';
 
 import { HeroesComponent } from './heroes/heroes.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -14,7 +16,7 @@ const routes: Routes = [
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes), BrowserModule, AgGridModule.withComponents([])
   ],
   exports: [RouterModule]
 })
